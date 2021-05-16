@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b9ea6779-aefe-4a91-a81e-52f22569bfb1" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
+        <item name="collations" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1RhQ8Rtwhgwy26l2CfBsFly9F0y" />
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.console.LAST_STATE" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Programms\Django_WebTimeTable\templates\en" />
+      <recent name="D:\Programms\Django_WebTimeTable\templates\ua" />
+      <recent name="D:\Programms\Django_WebTimeTable\home\migrations" />
+      <recent name="D:\Programms\Django_WebTimeTable\static\static_dev\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programms\Django_WebTimeTable\templates\ru" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Django_WebTimeTable" type="Python.DjangoServer" factoryName="Django server">
+      <module name="Django_WebTimeTable" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@11c6d784" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@11c6d784" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@2836e6c4" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@11c6d784" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@58ec38ba" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@11c6d784" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@4c077570" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@11c6d784" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@afc4b91" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@11c6d784" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@c7f8fd0" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b9ea6779-aefe-4a91-a81e-52f22569bfb1" name="Default Changelist" comment="" />
+      <created>1569086675409</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569086675409</updated>
+      <workItem from="1569086765374" duration="944000" />
+      <workItem from="1569516910754" duration="6433000" />
+      <workItem from="1569600747568" duration="818000" />
+      <workItem from="1569910691554" duration="2517000" />
+      <workItem from="1569941510151" duration="4067000" />
+      <workItem from="1570024765751" duration="10967000" />
+      <workItem from="1570087371530" duration="5580000" />
+      <workItem from="1570109101582" duration="2520000" />
+      <workItem from="1570116705772" duration="1029000" />
+      <workItem from="1570117747228" duration="1453000" />
+      <workItem from="1570121236342" duration="1955000" />
+      <workItem from="1570123293402" duration="214000" />
+      <workItem from="1570198832946" duration="128000" />
+      <workItem from="1570198983236" duration="4005000" />
+      <workItem from="1570271694166" duration="21403000" />
+      <workItem from="1570365334152" duration="11051000" />
+      <workItem from="1570383191372" duration="4210000" />
+      <workItem from="1570461105436" duration="2875000" />
+      <workItem from="1570515015908" duration="284000" />
+      <workItem from="1570515324011" duration="3092000" />
+      <workItem from="1570541903513" duration="4655000" />
+      <workItem from="1570605246893" duration="5859000" />
+      <workItem from="1570614243042" duration="685000" />
+      <workItem from="1570615052314" duration="946000" />
+      <workItem from="1570616101103" duration="421000" />
+      <workItem from="1570616537783" duration="1699000" />
+      <workItem from="1570619609523" duration="8081000" />
+      <workItem from="1570629889548" duration="6462000" />
+      <workItem from="1570639105262" duration="3464000" />
+      <workItem from="1570712995143" duration="726000" />
+      <workItem from="1570714369560" duration="15135000" />
+      <workItem from="1570734744476" duration="69000" />
+      <workItem from="1570734833664" duration="1473000" />
+      <workItem from="1570775505038" duration="2561000" />
+      <workItem from="1570805151980" duration="12361000" />
+      <workItem from="1570883251523" duration="17300000" />
+      <workItem from="1570967355511" duration="61000" />
+      <workItem from="1570967487729" duration="9977000" />
+      <workItem from="1571047434918" duration="12292000" />
+      <workItem from="1571215988304" duration="11600000" />
+      <workItem from="1571313335066" duration="2806000" />
+      <workItem from="1571497688148" duration="4603000" />
+      <workItem from="1571548810445" duration="96000" />
+      <workItem from="1571548928147" duration="24860000" />
+      <workItem from="1571658535245" duration="2211000" />
+      <workItem from="1571660845331" duration="8361000" />
+      <workItem from="1571673585203" duration="7709000" />
+      <workItem from="1571750843079" duration="13429000" />
+      <workItem from="1576160646046" duration="2855000" />
+      <workItem from="1576302441905" duration="27826000" />
+      <workItem from="1586500170978" duration="170000" />
+      <workItem from="1586500398409" duration="2453000" />
+      <workItem from="1586603033593" duration="8128000" />
+      <workItem from="1586672123519" duration="16693000" />
+      <workItem from="1586787747297" duration="2001000" />
+      <workItem from="1586857106928" duration="1890000" />
+      <workItem from="1586945064460" duration="1980000" />
+      <workItem from="1587048757944" duration="1263000" />
+      <workItem from="1587109558856" duration="4522000" />
+      <workItem from="1587196165517" duration="2308000" />
+      <workItem from="1604511832709" duration="78000" />
+      <workItem from="1605003342263" duration="1199000" />
+      <workItem from="1607763836301" duration="6418000" />
+      <workItem from="1607842872086" duration="6105000" />
+      <workItem from="1607933493680" duration="5361000" />
+      <workItem from="1608216135570" duration="52000" />
+      <workItem from="1609279931663" duration="4577000" />
+      <workItem from="1609581160756" duration="3148000" />
+      <workItem from="1610520008885" duration="595000" />
+      <workItem from="1615809073252" duration="1773000" />
+      <workItem from="1615883036760" duration="619000" />
+      <workItem from="1619352249156" duration="748000" />
+      <workItem from="1621176133442" duration="263000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

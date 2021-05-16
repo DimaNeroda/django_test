@@ -1,0 +1,43 @@
+.table td, .table th
+{
+    vertical-align: middle;
+    horiz-align: center;
+}
+
+.test
+{
+    text-align: center;
+}
+
+.custom-select
+{
+    width: auto;
+}
+
+#formStud, #formTeach
+{
+    display: none;
+}
+
+.testCanvas
+{
+    width: 32%;
+    height: auto;
+    display: inline-block;
+}
+
+table{
+    table-layout: fixed;
+    width: 100%;
+}
+
+.maincol
+{
+    width: 5%;
+    text-align: center;
+}
+
+.contLang
+{
+    display: none;
+}

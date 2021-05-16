@@ -1,0 +1,281 @@
+{% extends 'ru/base.html' %}  {# html #}
+
+{% load static %}
+{% load custom_filter %}
+
+{% block content %}
+
+    <div>
+        <label for="work">Для </label>  {# Locale #}
+        <select name="work" id="work" class="custom-select">
+            <option value="0" selected>-----</option>
+            <option value="1">Студента</option>  {# Locale #}
+            <option value="2">Преподавателя</option>  {# Locale #}
+        </select>
+    </div>
+
+    <form action="{% url 'home_ru' %}" method="GET" id="formStud">  {# url #}
+
+        <div>
+            <label for="facultyStud">Факультет </label>  {# Locale #}
+            <select name="faculty" id="facultyStud" class="custom-select">
+                <option value="0" selected>-----</option>
+                {% for fac in faculty_list %}
+                    <option value="{{ fac.id }}">{{ fac.NameFaculty_ru }}</option>  {# Locale #}
+                {% endfor %}
+            </select>
+        </div>
+
+        <div>
+            <label for="departmentStud">Кафедра </label>  {# Locale #}
+            <select name="department" id="departmentStud" class="custom-select">
+                <option value="0" selected>-----</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="course">Курс </label>  {# Locale #}
+            <select name="course" id="course" class="custom-select">
+                <option value="0" selected>-----</option>
+                {% for cou in course_list %}
+                    <option value="{{ cou.id }}">{{ cou.NumberCourse }}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div>
+            <label for="group">Группа </label>  {# Locale #}
+            <select name="group" id="group" class="custom-select">
+                <option value="0" selected>-----</option>
+            </select>
+        </div>
+
+        <div>
+            <button class="btn btn-primary" id="btnForm">OK</button>  {# Locale #}
+        </div>
+
+    </form>
+
+    <form action="{% url 'home_ru' %}" method="GET" id="formTeach">  {# url #}
+
+        <div>
+            <label for="facultyTeach">Факультет </label>  {# Locale #}
+            <select name="faculty" id="facultyTeach" class="custom-select">
+                <option value="0" selected>-----</option>
+                {% for fac in faculty_list %}
+                    <option value="{{ fac.id }}">{{ fac.NameFaculty_ru }}</option>  {# Locale #}
+                {% endfor %}
+            </select>
+        </div>
+
+        <div>
+            <label for="departmentTeach">Кафедра </label>  {# Locale #}
+            <select name="department" id="departmentTeach" class="custom-select">
+                <option value="0" selected>-----</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="teacher">Преподаватель </label>  {# Locale #}
+            <select name="teacher" id="teacher" class="custom-select">
+                <option value="0" selected>-----</option>
+            </select>
+        </div>
+
+        <div>
+            <button class="btn btn-primary" id="testbutton">OK</button>  {# Locale #}
+        </div>
+
+    </form>
+
+    <div>
+        {% if scheduleFor == 'Teacher' %}
+
+            Расписание, преподаватель - {{ teacherFor.Surname_ru }} {{ teacherFor.Name_ru }} {{ teacherFor.Patronymic_ru }}  {# Locale #}
+
+        {% elif scheduleFor == 'Group' %}
+
+            Расписание, группа №{{ groupFor.NumberGroup }}, кафедра {{ departmentFor.NameDepartment_ru }}  {# Locale #}
+
+        {% else %}
+
+        {% endif %}
+    </div>
+
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+        {% for TW in typeWeek %}
+
+            {% if forloop.counter0 == 0 %}
+
+                <li class="nav-item">
+                    <a class="nav-link active" id="{{ TW|return_id_tab_week:"week"|return_concat_words:"-tab" }}" data-toggle="tab" href="{{ TW|return_id_tab_week:"#week" }}" role="tab" aria-controls="{{ TW|return_id_tab_week:"week" }}" aria-selected="true">Неделя {{ TW }}</a>
+                </li>
+
+            {% else %}
+
+                <li class="nav-item">
+                    <a class="nav-link" id="{{ TW|return_id_tab_week:"week"|return_concat_words:"-tab" }}" data-toggle="tab" href="{{ TW|return_id_tab_week:"#week" }}" role="tab" aria-controls="{{ TW|return_id_tab_week:"week" }}" aria-selected="false">Неделя {{ TW }}</a>
+                </li>
+
+            {% endif %}
+
+        {% endfor %}
+
+    </ul>
+
+    <div class="tab-content" id="myTabContent">
+
+        {% for typWee in allLess %}
+
+            {% if forloop.counter0 == 0 %}
+
+                <div class="tab-pane fade show active" id="{{ week_list|return_week_ru:forloop.counter0|return_id_tab_week:"week" }}" role="tabpanel" aria-labelledby="{{ week_list|return_week_ru:forloop.counter0|return_id_tab_week:"week"|return_concat_words:"-tab" }}">  {# Locale #}
+
+                    <table class="table">
+
+                        <thead class="thead-dark">
+                        <tr>
+                            <th scope="col" class="maincol"> {{ week_list|return_week_ru:forloop.counter0 }} </th>  {# Locale #}
+
+                            {% for dayWee in dayweek_list %}
+
+                                <th scope="col" class="test"> {{ dayWee.NameDay_ru }} </th>  {# Locale #}
+
+                            {% endfor %}
+                        </tr>
+                        </thead>
+
+                        <tbody>
+
+                        {% for numLess in typWee %}
+
+                            <tr>
+                                <th scope="row" class="maincol">
+                                    <div>
+                                        №{{ timelesson_list|return_number:forloop.counter0 }}
+                                    </div>
+                                    <div>
+                                        {{ timelesson_list|return_start_time:forloop.counter0|time:"H:i" }}<br>
+                                        -<br>
+                                        {{ timelesson_list|return_end_time:forloop.counter0|time:"H:i" }}
+                                    </div>
+                                </th>
+                                {% for less in numLess %}
+
+                                    {% if less.id == Null %}
+                                        <td>
+                                            <div class="test">
+                                                Нет пары  {# Locale #}
+                                            </div>
+                                        </td>
+                                    {% else %}
+                                        <td>
+                                            <div class="test">
+                                                {{ less.IdSubject.NameSubject_ru }}  {# Locale #}
+                                            </div>
+                                            <div class="test">
+                                                {{ less.IdTypeSubject.NameTypeSubject_ru }}  {# Locale #}
+                                            </div>
+                                            <div class="test">
+                                                {{ less.IdLectureHall.NumberLectureHall }}
+                                            </div>
+                                        </td>
+                                    {% endif %}
+
+                                {% endfor %}
+                            </tr>
+
+                        {% endfor %}
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            {% else %}
+
+                <div class="tab-pane fade show" id="{{ week_list|return_week_ru:forloop.counter0|return_id_tab_week:"week" }}" role="tabpanel" aria-labelledby="{{ week_list|return_week_ru:forloop.counter0|return_id_tab_week:"week"|return_concat_words:"-tab" }}">  {# Locale #}
+
+                    <table class="table">
+
+                        <thead class="thead-dark">
+                        <tr>
+                            <th scope="col" class="maincol"> {{ week_list|return_week_ru:forloop.counter0 }} </th>  {# Locale #}
+
+                            {% for dayWee in dayweek_list %}
+
+                                <th scope="col" class="test"> {{ dayWee.NameDay_ru }} </th>  {# Locale #}
+
+                            {% endfor %}
+                        </tr>
+                        </thead>
+
+                        <tbody>
+
+                        {% for numLess in typWee %}
+
+                            <tr>
+                                <th scope="row" class="maincol">
+                                    <div>
+                                        №{{ timelesson_list|return_number:forloop.counter0 }}
+                                    </div>
+                                    <div>
+                                        {{ timelesson_list|return_start_time:forloop.counter0|time:"H:i" }}<br>
+                                        -<br>
+                                        {{ timelesson_list|return_end_time:forloop.counter0|time:"H:i" }}
+                                    </div>
+                                </th>
+                                {% for less in numLess %}
+
+                                    {% if less.id == Null %}
+                                        <td>
+                                            <div class="test">
+                                                Нет пары  {# Locale #}
+                                            </div>
+                                        </td>
+                                    {% else %}
+                                        <td>
+                                            <div class="test">
+                                                {{ less.IdSubject.NameSubject_ru }}  {# Locale #}
+                                            </div>
+                                            <div class="test">
+                                                {{ less.IdTypeSubject.NameTypeSubject_ru }}  {# Locale #}
+                                            </div>
+                                            <div class="test">
+                                                {{ less.IdLectureHall.NumberLectureHall }}
+                                            </div>
+                                        </td>
+                                    {% endif %}
+
+                                {% endfor %}
+                            </tr>
+
+                        {% endfor %}
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            {% endif %}
+
+        {% endfor %}
+
+    </div>
+
+    <div id="allCharts">
+        <div class="testCanvas">
+            <canvas id="myChartLocalHall"></canvas>
+        </div>
+        <div class="testCanvas">
+            <canvas id="myChartLocalLesson"></canvas>
+        </div>
+        <div class="testCanvas">
+            <canvas id="myChartLocalTypeLesson"></canvas>
+        </div>
+    </div>
+
+{% endblock content %}

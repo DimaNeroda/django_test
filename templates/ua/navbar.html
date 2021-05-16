@@ -1,0 +1,17 @@
+{% load static %}
+<nav class="navbar navbar-light bg-light">
+    <div>
+        <a class="navbar-brand" href="#">
+            <img src="{% static 'static_dev/img/logoKSU.jpg' %}" width="100" height="100" class="d-inline-block" alt="">
+            Херсонський Державний Університет  {# Locale #}
+        </a>
+    </div>
+    <div>
+        <label for="language"></label>  {# Locale #}
+        <select name="language" id="language" class="custom-select">
+            <option value="ru">Русский</option>  {# Locale and selected#}
+            <option value="ua" selected>Українська</option>  {# Locale #}
+            <option value="en">English</option>  {# Locale #}
+        </select>
+    </div>
+</nav>
